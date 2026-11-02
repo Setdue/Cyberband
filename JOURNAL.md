@@ -1,16 +1,16 @@
----
-title: "CyberBand – Smart Wearable Security Badge"
-github: "https://github.com/Setdue/Cyberband"
-description: "A planned ESP32 wearable badge for passive Wi-Fi awareness, environmental readings, and user alerts."
-created_at: "2026-11-02"
----
+________________________________________
+Journal
+Entry 1: November 2, 2026
+•	How much time  I  spent: I don’t really kow
+•	What I did: Registered for Hack Club under  Lulu and began planning CyberBand, an ESP32-powered wearable cyber awareness badge. Identified the main hardware , including thecomponents ESP32 controller, OLED display, env sensor, alert sys, and portable power supply.
+•	What I learned: Learned about  defining hardware requirements before building a physical prototype. Identified the need to consider power consumption, component compatibility, wireless capabilities, 
+•	Current Status: Hardware planning and component verification.
+•	Next Steps:
+1.	Verify the ESP32 dev board  is working
+2.	Design the initial circuit schematic.(simple I hope never tried it before)
+3.	Test the ESP32 .(if it works)
+4.	connect the OLED display and environmental sensor.
+5.	Develop Wi-Fi scanning and alert functionality.(hopefully)
+6.	Design the wearable enclosure (I don’t have a 3d printer)
 
-# Journal
 
-## Entry 1: November 2, 2026
-
-- **Time Spent:** [Record actual time spent]
-- **What I did:** Planned CyberBand's requirements and researched candidate parts. Defined the intended subsystems: an ESP32 controller with passive nearby Wi-Fi discovery, an OLED display and buttons, temperature and humidity sensing, visual or sound or vibration alerts, and portable power with battery monitoring.
-- **What I learned:** The component variants and their electrical requirements need to be confirmed before wiring. The display, sensor, alert devices, and power system must be checked for compatible voltage, interfaces, current draw, and ESP32 pin use.
-
-This entry records planning and requirements work only. No build time, hardware test, or completed circuit is claimed.
