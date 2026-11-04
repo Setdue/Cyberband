@@ -1,12 +1,8 @@
 # Documentation
 
-Store project requirements, setup instructions, design decisions, and validation notes here.
+This folder holds requirements, setup notes, and validation records.
 
-Useful documents to add as the project develops:
-- Verified component list and interface requirements
-- Schematic review and wiring notes
-- Firmware setup and user instructions
-- Safety and privacy notes
-- Test procedures and results, recorded only after tests are actually performed
+- [Simulation tests](SIMULATION-TESTS.md) records only the Wokwi run performed for this prototype.
+- [Project journal](../JOURNAL.md) follows the Fallen YAML front-matter format.
 
-The project journal is in [../JOURNAL.md](../JOURNAL.md).
+The virtual simulation is not evidence of a physical circuit, battery, enclosure, PCB, or wearable having been built or tested.

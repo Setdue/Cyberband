@@ -1,7 +1,9 @@
 # Firmware
 
-Planned firmware target: an ESP32 development board.
+The tested virtual-prototype sketch and its Wokwi circuit files are in [wokwi](wokwi/).
 
-The intended firmware may provide a display and button interface, passive nearby Wi-Fi network discovery, environmental sensor readings, alert output, and battery status. Exact board variant, libraries, pin assignments, and behavior are not yet verified. No firmware implementation is present yet.
+The firmware reads a DHT22, renders Home/Wi-Fi/Battery screens on an SSD1306 OLED, passively scans the simulated Wi-Fi environment on request, and drives a piezo tone plus scan/haptic-indicator LEDs when a scan completes. GPIO 34 reads a simulation potentiometer; it is not connected to a physical battery monitor.
 
-Before implementation, document the selected board and component interfaces. Keep wireless behavior passive and do not capture traffic, collect credentials, or disrupt networks.
+Open firmware/wokwi in Wokwi or copy its sketch.ino, diagram.json, and libraries.txt into an ESP32 Wokwi project. Use an ESP32 DevKit C V4 and serial monitor speed 115200 baud. Tested libraries are listed in libraries.txt.
+
+Simulation test observations are recorded in ../documentation/SIMULATION-TESTS.md. The firmware has not been flashed onto physical hardware.

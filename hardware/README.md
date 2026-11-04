@@ -1,5 +1,5 @@
 # Hardware
 
-This directory will hold the CyberBand electrical design, PCB files, and bill of materials.
+The current electrical design is a Wokwi virtual circuit, not a physical schematic or assembled device. The tested pin map and safety considerations are documented in [schematics/CONNECTIONS.md](schematics/CONNECTIONS.md); the simulator diagram is in [the Wokwi firmware folder](../firmware/wokwi/diagram.json). Candidate modeled components are listed in [bom/BOM.md](bom/BOM.md).
 
-The design is at the planning stage. Confirm the exact ESP32 board, display, environmental sensor, alert devices, and power components before treating any wiring or part choice as final. Check voltage levels, current draw, charging and protection requirements, and pin compatibility before applying power.
+The PCB and enclosure have not been designed. Before physical assembly, confirm exact module variants, supply and logic voltages, current draw, battery charging and protection, and the motor driver. No physical hardware test is claimed.

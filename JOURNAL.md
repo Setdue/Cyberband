@@ -1,16 +1,24 @@
-________________________________________
-Journal
-Entry 1: November 2, 2026
-•	How much time  I  spent: I don’t really kow
-•	What I did: Registered for Hack Club under  Lulu and began planning CyberBand, an ESP32-powered wearable cyber awareness badge. Identified the main hardware , including thecomponents ESP32 controller, OLED display, env sensor, alert sys, and portable power supply.
-•	What I learned: Learned about  defining hardware requirements before building a physical prototype. Identified the need to consider power consumption, component compatibility, wireless capabilities, 
-•	Current Status: Hardware planning and component verification.
-•	Next Steps:
-1.	Verify the ESP32 dev board  is working
-2.	Design the initial circuit schematic.(simple I hope never tried it before)
-3.	Test the ESP32 .(if it works)
-4.	connect the OLED display and environmental sensor.
-5.	Develop Wi-Fi scanning and alert functionality.(hopefully)
-6.	Design the wearable enclosure (I don’t have a 3d printer)
+---
+title: "CyberBand — ESP32 Wearable Cyber-Awareness Band"
+github: "https://github.com/Setdue/Cyberband"
+description: "A virtual ESP32 wearable prototype with environmental sensing, OLED feedback, passive Wi-Fi discovery, and simulated battery status."
+created_at: "2026-11-02"
+---
 
+# Journal
 
+## Entry 1: 2026-11-02
+
+- **Time Spent:** [Add actual time spent]
+- **What I did:** Began planning CyberBand and identified the project requirements: an ESP32 controller, a small display, an environmental sensor, user alerts, and portable power.
+- **What I learned:** The exact board and component variants, voltage levels, pin assignments, and power requirements need to be checked before making a physical circuit.
+- **Current status:** Planning and component research.
+
+## Entry 2: 2026-11-04
+
+- **Time Spent:** [Add actual time spent]
+- **What I did:** With AI assistance, created a Wokwi virtual prototype using an ESP32 DevKit C V4, SSD1306 OLED, DHT22, two buttons, piezo buzzer, potentiometer, two indicator LEDs, and two 1 kΩ resistors. Added Home, passive Wi-Fi, and Battery screens.
+- **What I learned:** The OLED works with I²C on GPIO 21 and 22 when the Wokwi diagram uses numeric GPIO pin references. The potentiometer can exercise battery-display endpoints without pretending that a real battery monitor has been built.
+- **Simulation check:** Wokwi compiled and booted the firmware. The display showed 24.0 °C and 45% humidity; a passive scan reported one simulated open network; and the battery screen showed 0% and 100% at the potentiometer endpoints.
+- **Current status:** Virtual prototype exercised; no physical hardware has been assembled or tested.
+- **Next steps:** Save the Wokwi editor revision after signing in; confirm physical module voltage and pull-ups; research and select real battery and vibration-drive circuits; then review a physical schematic before assembly.

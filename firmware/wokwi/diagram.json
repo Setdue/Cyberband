@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 112, "left": 24, "attrs": {} },
+    { "type": "board-ssd1306", "id": "oled", "top": 44, "left": 340, "attrs": { "i2cAddress": "0x3c" } },
+    { "type": "wokwi-dht22", "id": "dht1", "top": 226, "left": 360, "attrs": { "temperature": "24", "humidity": "45" } },
+    { "type": "wokwi-pushbutton", "id": "btnPage", "top": 120, "left": 575, "attrs": { "color": "blue", "label": "NEXT", "key": "N", "bounce": "0" } },
+    { "type": "wokwi-pushbutton", "id": "btnScan", "top": 188, "left": 575, "attrs": { "color": "red", "label": "SCAN", "key": "S", "bounce": "0" } },
+    { "type": "wokwi-buzzer", "id": "buzz1", "top": 320, "left": 590, "attrs": { "volume": "0.2" } },
+    { "type": "wokwi-potentiometer", "id": "pot1", "top": 368, "left": 340, "attrs": { "value": "700" } },
+    { "type": "wokwi-led", "id": "ledScan", "top": 364, "left": 505, "attrs": { "color": "green" } },
+    { "type": "wokwi-resistor", "id": "rScan", "top": 405, "left": 500, "attrs": { "value": "1000" } },
+    { "type": "wokwi-led", "id": "ledHaptic", "top": 440, "left": 505, "attrs": { "color": "blue" } },
+    { "type": "wokwi-resistor", "id": "rHaptic", "top": 480, "left": 500, "attrs": { "value": "1000" } }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ], [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "esp:VIN", "oled:VCC", "red", [] ], [ "esp:GND.1", "oled:GND", "black", [] ],
+    [ "esp:22", "oled:SCL", "green", [] ], [ "esp:21", "oled:SDA", "green", [] ],
+    [ "esp:3V3", "dht1:VCC", "red", [] ], [ "esp:GND.1", "dht1:GND", "black", [] ],
+    [ "esp:23", "dht1:SDA", "green", [] ],
+    [ "esp:18", "btnPage:1.l", "green", [] ], [ "esp:GND.1", "btnPage:2.l", "black", [] ],
+    [ "esp:19", "btnScan:1.l", "green", [] ], [ "esp:GND.1", "btnScan:2.l", "black", [] ],
+    [ "esp:25", "buzz1:2", "green", [] ], [ "esp:GND.1", "buzz1:1", "black", [] ],
+    [ "esp:3V3", "pot1:VCC", "red", [] ], [ "esp:GND.1", "pot1:GND", "black", [] ],
+    [ "esp:34", "pot1:SIG", "green", [] ],
+    [ "esp:2", "rScan:1", "green", [] ], [ "rScan:2", "ledScan:A", "green", [] ],
+    [ "ledScan:C", "esp:GND.1", "black", [] ],
+    [ "esp:26", "rHaptic:1", "green", [] ], [ "rHaptic:2", "ledHaptic:A", "green", [] ],
+    [ "ledHaptic:C", "esp:GND.1", "black", [] ]
+  ],
+  "dependencies": {}
+}
